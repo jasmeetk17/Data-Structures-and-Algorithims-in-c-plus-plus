@@ -1,0 +1,31 @@
+1. Start
+2. Declare the variables:
+   i: initializer 
+   size: size of an array
+   pos: position where data to be inserted before this position
+   data: value which is inserted
+   n: how many elemnets to be inserted
+3. Input the size of an array declare the array a[size]
+4. Input the number of  element to be inserted in a arrray
+5. Using loop input the element to be inserted in an array
+   for (i=0;i<n;i++){
+    cin>>a[i];
+   }
+6. Prin the array before insertion
+   for (i=0;i<n;i++){
+    cout<<a[i];
+   }
+6. Input the value and position to be inserted before the given position
+7. Now traversing the from last index to the one step before given positon from where the value to be inserted and shifting the value from lower ondex to lower+1
+   for (i=n; i>=pos-1; i--)
+   {
+    a[i+1]=a[i]
+   }
+8. Now add element to the one step before the given position
+   a[pos-1]=data
+9. Now print the array
+   for (i=0;i<n+1;i++)
+   {
+    cout<<a[i]
+   }
+10. Stop
